@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Property Companion",
+    "slug": "property-companion",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1E2B3A",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.getter.propertycompanion"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-sharing",
+      "expo-mail-composer",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Property Companion uses your location to show which properties are near you.",
+          "locationWhenInUsePermission": "Property Companion uses your location to show which properties are near you.",
+          "isAndroidBackgroundLocationEnabled": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Property Companion needs access to your photos so you can attach receipts and meter readings.",
+          "cameraPermission": "Property Companion needs the camera so you can photograph receipts and meter readings."
+        }
+      ]
+    ],
+    "scheme": "propertycompanion",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1E2B3A"
+    }
+  }
+}
